@@ -1,3 +1,1 @@
-Rails.application.routes.draw do
-  resources :birds, only: [:index, :show, :create]
-end
+Rails.application.routes.draw { resources :birds, only: %i[index show create update] }
